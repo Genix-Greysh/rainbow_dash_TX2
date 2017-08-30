@@ -1,0 +1,5 @@
+<launch>
+
+  <node pkg="rainbow_dash_TX2" type="manual_receive" name="manual_receive" />
+
+</launch>
