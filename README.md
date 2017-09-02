@@ -4,7 +4,21 @@
 
 [rosserial](https://github.com/ros-drivers/rosserial)
 
+`sudo apt-get install arduino arduino-core`
+
+The TX2 kernel will need to be rebuilt to enable support for the FTDI converter on the Arduino.
+
+[Follow these instructions.](http://www.jetsonhacks.com/2017/03/25/build-kernel-and-modules-nvidia-jetson-tx2/) Before ./makeKernel.sh, execute this:
+
+`sudo sed -i 's/.*CONFIG_USB_ACM.*/CONFIG_USB_ACM=y/' /usr/src/kernel/kernel-4.4/.config`
+
+And then finish the instructions.
+
+Terminal dependencies:
+
 ```
+sudo apt-get install ros-kinetic-openni2-camera
+sudo apt-get install ros-kinetic-openni2-launch
 sudo apt-get install ros-kinetic-rosserial-arduino
 sudo apt-get install ros-kinetic-rosserial
 ```
