@@ -2,9 +2,8 @@
 
 ### Dependencies
 
-[rosserial](https://github.com/ros-drivers/rosserial)
+##### Enable Arduino Support
 
-`sudo apt-get install arduino arduino-core`
 
 The TX2 kernel will need to be rebuilt to enable support for the FTDI converter on the Arduino.
 
@@ -14,7 +13,15 @@ The TX2 kernel will need to be rebuilt to enable support for the FTDI converter 
 
 And then finish the instructions.
 
-Terminal dependencies:
+Finally: `sudo apt-get install arduino arduino-core`
+
+Upon attaching an Arduino to the TX2, a device named beginning with ttyACM should be listed in your /dev/.
+
+##### ROS Dependencies
+
+[rosserial](https://github.com/ros-drivers/rosserial)
+
+##### Terminal dependencies:
 
 ```
 sudo apt-get install ros-kinetic-openni2-camera
@@ -22,6 +29,8 @@ sudo apt-get install ros-kinetic-openni2-launch
 sudo apt-get install ros-kinetic-rosserial-arduino
 sudo apt-get install ros-kinetic-rosserial
 ```
+
+##### Set up your TX2 ROS to use Ground Station's roscore
 
 Find your IP with:
 `hostname -I` (case sensitive)
