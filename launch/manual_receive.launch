@@ -1,5 +1,6 @@
 <launch>
 
   <node pkg="rainbow_dash_TX2" type="manual_receive" name="manual_receive" />
+  <node pkg="rosserial_python" type="serial_node.py" name="serial_node" args="$(arg ard)"/>
 
 </launch>
