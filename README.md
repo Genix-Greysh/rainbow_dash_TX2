@@ -48,7 +48,7 @@ Acquire HOST IP from `hostname -I` on the ground control computer. See [Rainbow 
 
 ### Pins
 
-| Device | Bus | Pins |
-| ------ | --- | ---- |
-|[Inertial Measurement Unit](https://www.amazon.com/HiLetgo-Gyroscope-Acceleration-Accelerator-Magnetometer/dp/B01I1J0Z7Y/ref=pd_lpo_vtph_147_tr_t_2?_encoding=UTF8&psc=1&refRID=5V0JGQY8WYM4W9DRX883) | J21 | 3 (SDA), 5 (SCL) |
-[Venus638](https://www.sparkfun.com/products/retired/10921) | J21 | 8 (UART0_TX), 10 (UART0_RX) |
+| Device | Bus | Pins | Voltage |
+| ------ | --- | ---- | --- |
+|[9DOF Inertial Measurement Unit (IMU)](https://www.amazon.com/HiLetgo-Gyroscope-Acceleration-Accelerator-Magnetometer/dp/B01I1J0Z7Y/ref=pd_lpo_vtph_147_tr_t_2?_encoding=UTF8&psc=1&refRID=5V0JGQY8WYM4W9DRX883) | J21 | 3 (SDA), 5 (SCL) | 3-5V |
+|[Venus638 GPS Module](https://www.sparkfun.com/products/retired/10921) | J21 | 8 (UART0_TX), 10 (UART0_RX) | 2.7-3.3V |
