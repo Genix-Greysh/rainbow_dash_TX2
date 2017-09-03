@@ -45,3 +45,10 @@ export ROS_MASTER_URI=http://<HOST IP>:11311
 And then: `source ~/.bashrc`
 
 Acquire HOST IP from `hostname -I` on the ground control computer. See [Rainbow Dash Ground Control](http://github.com/Yonder-Dynamics/rainbow_dash_ground_control.git)
+
+### Pins
+
+| Device | Bus | Pins |
+| ------ | --- | ---- |
+|[Inertial Measurement Unit](https://www.amazon.com/HiLetgo-Gyroscope-Acceleration-Accelerator-Magnetometer/dp/B01I1J0Z7Y/ref=pd_lpo_vtph_147_tr_t_2?_encoding=UTF8&psc=1&refRID=5V0JGQY8WYM4W9DRX883) | J21 | 3 (SDA), 5 (SCL) |
+[Venus638](https://www.sparkfun.com/products/retired/10921) | J21 | 8 (UART0_TX), 10 (UART0_RX) |
